@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    android:layout_marginStart="46dp" />
+
+    <EditText
+
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/edit_text1"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_text1"
+        android:id="@+id/edit_text2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM: "
+        android:layout_toLeftOf="@+id/edit_text1"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignBaseline="@+id/edit_text1"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mile: "
+        android:layout_toLeftOf="@+id/edit_text2"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignBaseline="@+id/edit_text2"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_below="@+id/edit_text2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/button_convert" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_clear"
+        android:layout_alignTop="@+id/button_convert"
+        android:layout_toRightOf="@+id/button_convert"
+        android:layout_toEndOf="@+id/button_convert"
+        android:layout_marginLeft="46dp"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_return"
+        android:text="Return"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_return"
+        android:drawablePadding="0dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="15dp"
+        android:padding="1dp"
+        android:textAllCaps="false"
+        android:id="@+id/button_about"
+        android:layout_below="@+id/button_convert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
